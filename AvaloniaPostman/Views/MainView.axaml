@@ -11,6 +11,51 @@
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
+ 
+    <Grid >
+    
+        <!-- Define the row that the TextBox will fill -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <!-- This row expands to fill available space -->
+        </Grid.RowDefinitions>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Margin="15 15 15 15" FontSize="24">Avalonia Postman App</Label>
+
+        <DockPanel Grid.Row="1" LastChildFill="True" Margin="15 0 15 5">
+            <!-- Label docked to the left -->
+            <Label Content="API:" DockPanel.Dock="Left" VerticalAlignment="Center"/>
+
+            <!-- Button docked to the right -->
+            <Button Content="Go" DockPanel.Dock="Right" VerticalAlignment="Center" Width="75" HorizontalContentAlignment="Center"
+                    Command="{Binding ExecuteGoCommand}"/>
+
+            <!-- TextBox fills the remaining space -->
+            <TextBox Margin="5"
+                     Text="{Binding ApiUrl}"/>
+        </DockPanel>
+
+        <Label Grid.Row="2" Margin="15 0 0 0" DockPanel.Dock="Top">Results:</Label>
+
+        <!-- Multiline TextBox configuration -->
+        <TextBox Grid.Row="3"  
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 Margin="15 0 15 15" IsReadOnly="True"
+                 Text="{Binding Results}"/>
+		
+        <Panel Grid.Row="4" Background="DimGray">
+            <Label  Margin="5"
+                    Content="{Binding Status}"/>
+        </Panel>
+
+	</Grid>
 </UserControl>
+
+

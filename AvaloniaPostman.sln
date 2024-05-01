@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPostman.Desktop", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaPostman.Browser", "AvaloniaPostman.Browser\AvaloniaPostman.Browser.csproj", "{231F86CC-6F0F-489B-8E2E-F3B4E54124A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostmanLibrary", "AvaloniaPostmanLibrary\PostmanLibrary.csproj", "{D330B31B-3605-42E1-85D1-C981D49EDA87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostmanLibrary", "AvaloniaPostmanLibrary\PostmanLibrary.csproj", "{D330B31B-3605-42E1-85D1-C981D49EDA87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5373A1B-8943-4691-8374-BB0CDE633D8B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
