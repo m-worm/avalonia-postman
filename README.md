@@ -4,5 +4,7 @@ Avalonia Postman Clone provides a cross-platform and user-friendly user interfac
 
 This is an example application inspired by the tutorial series by Tim Corey available on [YouTube](https://www.youtube.com/watch?v=FUqz2LF4BUs&list=PLLWMQd6PeGY3IxROaW7Hj8KFbRPg1x7mc). 
 
+![Avalonia Postman Clone ready-to-run](Images/Screenshot1.png "Ready to Run")
+
 Look at:
 https://eremexcontrols.net/index.html
