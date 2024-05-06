@@ -1,6 +1,6 @@
 # Avalonia Postman App
 
-Avalonia Postman Clone provides a cross-platform and user-friendly user interface for making GET requests to APIs and viewing the responses in formatted JSON. Ideal for developers and testers, the tool simplifies API interaction and debugging, helping you efficiently validate and troubleshoot your API calls. The application can run on the desktop (Windows, Mac and Linux) as well as a web-browser. 
+Avalonia Postman Clone provides a cross-platform and user-friendly interface for making GET requests to APIs and viewing the responses in formatted JSON. Ideal for developers and testers, the tool simplifies API interaction and debugging, helping you efficiently validate and troubleshoot your API calls. The application can run on the desktop (Windows, Mac and Linux) as well as a web-browser. 
 
 This is an example application inspired by the tutorial series by Tim Corey available on [YouTube](https://www.youtube.com/watch?v=FUqz2LF4BUs&list=PLLWMQd6PeGY3IxROaW7Hj8KFbRPg1x7mc). 
 
