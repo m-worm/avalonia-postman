@@ -11,8 +11,17 @@ public partial class MainViewModel : ViewModelBase
 {
     private readonly IApiAccess _api = new ApiAccess();
 
+    // Property to bind with the Results TextBox
+    [ObservableProperty] private int httpVerbIndex = 0;
+
     // Property to bind with the API TextBox
     [ObservableProperty] private string apiUrl = "https://jsonplaceholder.typicode.com/todos";
+
+    // Property to bind with the TabControl
+    [ObservableProperty] private int tabSelectedIndex = 1;
+
+    // Property to bind with the Body TextBox
+    [ObservableProperty] private string body = "{\n \"Name\": \"Matthew\"\n}";
 
     // Property to bind with the Results TextBox
     [ObservableProperty] private string results;

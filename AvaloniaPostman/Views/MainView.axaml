@@ -30,6 +30,11 @@
             <!-- Label docked to the left -->
             <Label Content="API:" DockPanel.Dock="Left" VerticalAlignment="Center"/>
 
+            <ComboBox SelectedIndex="{Binding HttpVerbIndex}" MaxDropDownHeight="100" VerticalAlignment="Center" Width="100">
+                <ComboBoxItem>GET</ComboBoxItem>
+                <ComboBoxItem>POST</ComboBoxItem>
+            </ComboBox>
+
             <!-- Button docked to the right -->
             <Button Content="Go" DockPanel.Dock="Right" VerticalAlignment="Center" Width="75" HorizontalContentAlignment="Center"
                     Command="{Binding ExecuteGoCommand}"/>
@@ -39,16 +44,28 @@
                      Text="{Binding ApiUrl}"/>
         </DockPanel>
 
-        <Label Grid.Row="2" Margin="15 0 0 0" DockPanel.Dock="Top">Results:</Label>
+        <TabControl Grid.Row="3" Margin="5" SelectedIndex="{Binding TabSelectedIndex}">
+            <TabItem Header="Body">
+                <!-- Multiline TextBox configuration -->
+                <TextBox AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Stretch"
+                         Margin="0 15 0 15" 
+                         Text="{Binding Body}"/>
+            </TabItem>
+            <TabItem Header="Results">
+                <!-- Multiline TextBox configuration -->
+                <TextBox AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Stretch"
+                         Margin="0 15 0 15" IsReadOnly="True"
+                         Text="{Binding Results}"/>            
+            </TabItem>
+        </TabControl>
 
-        <!-- Multiline TextBox configuration -->
-        <TextBox Grid.Row="3"  
-                 AcceptsReturn="True"
-                 TextWrapping="Wrap"
-                 HorizontalAlignment="Stretch"
-                 VerticalAlignment="Stretch"
-                 Margin="15 0 15 15" IsReadOnly="True"
-                 Text="{Binding Results}"/>
+
 		
         <Panel Grid.Row="4" Background="DimGray">
             <Label  Margin="5"
