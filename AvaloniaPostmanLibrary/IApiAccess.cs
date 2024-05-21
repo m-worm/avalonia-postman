@@ -2,8 +2,17 @@
 
 public interface IApiAccess
 {
-    Task<string> CallApiAsync(string url,
-        bool formatResult = true, HttpAction action = HttpAction.Get);
+    Task<string> CallApiAsync(
+        string url,
+        string content,
+        HttpAction action = HttpAction.Get,
+        bool formatResult = true);
+
+    Task<string> CallApiAsync(
+        string url,
+        HttpContent? content = null,
+        HttpAction action = HttpAction.Get,
+        bool formatResult = true);
 
     bool IsValidUrl(string url);
 }
