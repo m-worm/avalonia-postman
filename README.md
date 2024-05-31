@@ -18,14 +18,20 @@ This is an example application inspired by the tutorial series by Tim Corey avai
 ![Avalonia Postman Clone results](Images/Screenshot2.png "Run Results")
 4. That's all folks!
 
+## Examples
+
 Here are some simple examples to test each of the verbs supported by the application:
 
 **GET**
+
 URL: https://jsonplaceholder.typicode.com/posts/1
+
 Body: 
 
 **PUT**
+
 URL: https://jsonplaceholder.typicode.com/posts/1
+
 Body:
 {
   "id": 1,
@@ -35,19 +41,24 @@ Body:
 }
 
 **PATCH**
+
 URL: https://jsonplaceholder.typicode.com/posts/4
+
 Body:
 {
   "title": "This is our test title"
 }
 
 **DELETE**
+
 URL: https://jsonplaceholder.typicode.com/posts/4
+
 Body:
 
 #  Features
-**31 May 2024**
-Added POST, PUT, PATCH and DELETE functionality
+
+* v0.1.1 (31 May 2024) 
+  * Added POST, PUT, PATCH and DELETE functionality
 
 ## To Do
 * Add XML comments 
