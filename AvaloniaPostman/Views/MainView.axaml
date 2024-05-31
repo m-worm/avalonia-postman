@@ -33,6 +33,9 @@
             <ComboBox SelectedIndex="{Binding HttpVerbIndex}" MaxDropDownHeight="100" VerticalAlignment="Center" Width="100">
                 <ComboBoxItem>GET</ComboBoxItem>
                 <ComboBoxItem>POST</ComboBoxItem>
+                <ComboBoxItem>PUT</ComboBoxItem>
+                <ComboBoxItem>PATCH</ComboBoxItem>
+                <ComboBoxItem>DELETE</ComboBoxItem>
             </ComboBox>
 
             <!-- Button docked to the right -->

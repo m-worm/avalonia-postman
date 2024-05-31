@@ -34,6 +34,15 @@ public class ApiAccess : IApiAccess
             case HttpAction.Post:
                 response = await _client.PostAsync(url, content);
                 break;
+            case HttpAction.Put:
+                response = await _client.PutAsync(url, content);
+                break;
+            case HttpAction.Patch:
+                response = await _client.PatchAsync(url, content);
+                break;
+            case HttpAction.Delete:
+                response = await _client.DeleteAsync(url);
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(action), action, null);
         }
